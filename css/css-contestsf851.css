@@ -1,0 +1,444 @@
+                                
+    #slideshowparentcontainer
+    {
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    #slideshowparent
+        {
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 0px;
+        padding-bottom: 42%;
+        border: 1px solid #999999;
+        border: none;
+        border-radius: 0px;
+        overflow: hidden;
+        box-shadow: none;
+    }
+
+                                
+    .slideDiv   
+        {   
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0%;
+        width: 100%;
+        background-color: #444444;
+        background-image: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+
+    .slideTextDiv
+        {
+        display: inline-block;
+        width: 40%;
+        padding-top: 11%;
+        overflow: visible;
+        vertical-align: top;
+    }
+    
+    .slideTitle
+        {
+        display: inline-block;
+        width: 100%;
+        font-size: 32pt;
+        font-family: cabin, oswald;
+        font-weight: normal;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 15px #222222;
+        letter-spacing: 1px;
+        line-height: 100%;
+    }
+    
+    .slideSubTitle
+        {
+        display: inline-block;
+        width: 100%;
+        padding-top: 5px;
+        font: 14pt arial;
+        font-weight: normal;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 5px #000000;
+        line-height: 140%;
+        letter-spacing: 0px;    
+    }
+    
+    .slideThirdLine
+        {
+        display: inline-block;
+        width: 100%;
+        padding-top: 0px;
+        font: 12pt arial;
+        color: #FFFFFF;
+        text-shadow: 1px 1px 2px #000000;
+        line-height: 140%;  
+    }
+    
+    .slideImageDiv
+        {
+        display: inline-block;
+        width: 30%;
+        padding-left: 5%;
+        padding-top: 8%;
+        text-align: center;
+    }
+    
+    .slideImageDiv img
+        {
+        display: inline-block;
+        width: 90%;
+        padding: 0%;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 0px;
+        box-shadow: -10px 10px 8px rgba(0,0,0,0.30);
+    }
+
+    .slideTextDiv.dark .slideTitle
+        {   
+        color: #444444;
+        text-shadow: 2px 2px 10px #FFFFFF;
+    }
+
+
+    .slideTextDiv.dark .slideSubTitle
+        {
+        color: #222222;
+        text-shadow: 0px 0px 5px #FFFFFF;
+    }
+
+    .slideTextDiv.dark .slideThirdLine
+        {
+        color: #222222;
+        text-shadow: 1px 1px 2px #FFFFFF;
+    }
+
+    .slideTextDiv.dark .buttonslideshow
+        {
+        background-color: rgba(46,52,60,0.60);
+        border: 1px solid rgba(46,52,60,0.80);
+    }
+
+    .slideTextDiv.dark .buttonslideshow:hover
+        {
+        background-color: rgba(46,52,60,0.80);
+        box-shadow: 2px 2px 12px 0px #444444;
+    }
+
+    
+    #slideshowarrowleft
+        {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        top: -webkit-calc(50% - 40px);
+        top: calc(50% - 40px);
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+        padding: 20px;
+        border: none;          
+    }
+    
+    #slideshowarrowright
+        {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        top: -webkit-calc(50% - 40px);
+        top: calc(50% - 40px);
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+        padding: 20px;
+        border: none;  
+    }
+
+    .buttonslideshow
+        {
+        display: inline-block; 
+        width: 90%;
+        max-width: 300px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        vertical-align: middle; 
+        font-size: 14pt;
+        font-family: oswald, arial; 
+        font-weight: normal; 
+        color: #FFFFFF; 
+        text-shadow: 2px 2px 5px #222222;
+        border-radius: 0px;
+    }
+                                            
+    .buttonslideshow span
+        {
+        width: 90%;
+        font: 14pt arial; 
+        font-weight: normal; 
+        color: #FFFFFF; 
+        text-shadow: 2px 2px 5px #222222;       
+        display: inline-block;
+        text-transform: uppercase;
+    }
+                                                                                                                            
+    .buttonslideshow    
+        {   
+        background-color: rgba(46,52,60,0.40);
+        border: 1px solid #FFFFFF;
+    }
+    
+    .buttonslideshow:hover
+        {
+        background-color: rgba(46,52,60,0.60);
+        box-shadow: 2px 2px 12px 0px #444444; 
+    }
+    
+    .n
+        {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    
+    .h
+        {
+        background-color: rgba(255, 255, 255, 1.0);
+    }   
+    
+    @media screen and (max-width: 1200px)
+    {
+        
+        #slideshowparentcontainer
+                {
+            width: 100%;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }   
+        
+        #slideshowparent
+                {
+            width: 100%;
+            border: none;
+        }   
+
+        .slideTitle
+                {
+            font-size: 28pt;
+        }
+        
+        .slideSubTitle
+                {
+            padding-top: 0px;
+            font-size: 12pt;
+        }
+        
+        .slideThirdLine
+                {
+            padding-top: 0px;
+            font-size: 10pt;
+        }
+
+        .buttonslideshow
+                {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px; 
+            font-size: 12pt;    
+        }
+                                                
+        .buttonslideshow span
+                {
+            font-size: 12pt; 
+        }
+
+        
+    }
+    
+    
+    @media screen and (max-width: 840px)
+    {
+    
+        .slideTextDiv
+                {
+            width: 35%;
+            padding-top: 15%;
+        }
+    
+        .slideTitle
+                {
+            font-size: 20pt;
+            letter-spacing: normal;         
+        }
+        
+        .slideSubTitle
+                {
+            padding-top: 0px;
+            font-size: 10pt;
+        }
+        
+        .slideThirdLine
+                {
+            padding-top: 0px;
+            font-size: 9pt;
+            display: none;
+        }
+
+        .buttonslideshow
+                {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px; 
+            font-size: 9pt;
+            border-radius: 2px;
+        }
+                                                
+        .buttonslideshow span
+                {
+            font-size: 9pt;
+            text-transform: none;   
+        }
+
+        
+    }   
+    
+    
+    @media screen and (max-width: 640px)
+    {
+        #slideshowparent
+                {
+            width: 100%;
+            padding-bottom: 60%;
+            padding-bottom: 42%;
+            border: none;
+        }
+        
+        .slideTextDiv
+                {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            vertical-align: top;
+            padding-top: 5%;
+            /*background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.40), rgba(0,0,0,0.50),rgba(0,0,0,0.60),rgba(0,0,0,0.60),rgba(0,0,0,0.50),rgba(0,0,0,0.40),rgba(0,0,0,0));*/     
+        }
+
+        .slideTitle
+                {
+            width: 80%;
+            font-size: 16pt;
+            line-height: 120%;
+        }
+        
+        .slideSubTitle
+                {
+            width: 80%;
+            padding-top: 10px;
+            font-size: 12pt;
+        }
+        
+        .slideThirdLine
+                {
+            display: none;
+        }
+
+        .slideImageDiv
+                {
+            display: none;
+        }       
+        
+        .buttonslideshow
+                {
+            width: 50%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 10px; 
+            font-size: 14pt;
+            border-radius: 2px;
+            box-shadow: 0px 0px 10px -5px #222222 !important;
+        }
+                                                
+        .buttonslideshow span
+                {
+            font-size: 14pt; 
+        }
+        
+        #slideshowsquares
+                {
+            visibility: hidden;
+        }
+
+        #slideshowarrowleft
+                {
+            padding-left: 5px;
+        }
+
+        #slideshowarrowright
+                {
+            padding-right: 5px;
+        }
+        
+    }
+
+
+    @media screen and (max-width: 400px)
+    {       
+        #slideshowparent
+                {
+            padding-bottom: 75%;
+            padding-bottom: 42%;
+        }
+
+        .slideTitle
+                {
+            width: 80%;
+            font-size: 16pt;
+        }
+
+        .slideSubTitle
+                {
+            padding-top: 10px;
+            font-size: 10pt;
+        }   
+
+        .buttonslideshow
+                {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 5px; 
+            font-size: 12pt;
+            border-radius: 2px;
+        }
+                                                
+        .buttonslideshow span
+                {
+            font-size: 12pt; 
+        }
+        
+        #slideshowsquares
+                {
+            visibility: hidden;
+        }
+
+        #slideshowarrowleft
+                {
+            padding-left: 5px;
+        }
+
+        #slideshowarrowright
+                {
+            padding-right: 5px;
+        }
+        
+    }
